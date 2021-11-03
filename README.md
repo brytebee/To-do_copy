@@ -8,7 +8,7 @@ In this project, I built a simple HTML list of To Do tasks using JavaScript es6 
 
 ![image](https://user-images.githubusercontent.com/27709832/139261274-f7fb99bd-e591-458e-8a59-1b0addcc7c78.png)
 
-[live-demo](https://brytebee.github.io/to-Do$/dist/)
+[live-demo](https://brytebee.github.io/To-do_/)
 
 ## Built With
 
