@@ -1,0 +1,50 @@
+body {
+  color: red;
+  background-color: rgb(171, 199, 190);
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.card {
+  margin: 10% 30%;
+  background-color: rgb(219, 214, 207);
+  box-shadow: 10px 5px 8px #9c8080;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.double-line-height {
+  line-height: 2;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.parent-flex {
+  flex-wrap: wrap;
+}
+
+.child-flex-large {
+  flex: 9;
+}
+
+.child-flex-small {
+  flex: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.b-border {
+  border-bottom: 1px solid #9c8080;
+}
