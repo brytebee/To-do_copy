@@ -1,6 +1,10 @@
 body {
-  color: red;
   background-color: rgb(171, 199, 190);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(26, 114, 114);
 }
 
 ul {
@@ -11,8 +15,13 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+}
+
 .card {
   margin: 10% 30%;
+  padding: 1%;
   background-color: rgb(219, 214, 207);
   box-shadow: 10px 5px 8px #9c8080;
 }
@@ -47,4 +56,35 @@ li {
 
 .b-border {
   border-bottom: 1px solid #9c8080;
+}
+
+.strike-out {
+  text-decoration: line-through;
+}
+
+.success {
+  color: green;
+}
+
+.bg-success {
+  background-color: rgb(127, 206, 127);
+}
+
+.bg-success:hover {
+  background-color: green;
+  font-size: 1.4em;
+}
+
+.danger {
+  color: red;
+}
+
+.bg-danger {
+  background-color: rgb(214, 93, 93);
+}
+
+.bg-danger:hover {
+  background-color: red;
+  color: white;
+  font-size: 1em;
 }
