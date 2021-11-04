@@ -53,7 +53,7 @@ const display = (array) => {
 
     if (item.completed) {
       check.checked = true;
-      li.classList.add('strike-out');
+      list.classList.add('strike-out');
     }
 
     descriptionDiv.append(check, descriptionSpan);
