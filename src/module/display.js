@@ -7,8 +7,8 @@ const root = document.querySelector('#root');
 const display = (array) => {
   root.textContent = '';
   array.forEach((item) => {
-    const ul = document.createElement('ul');
-    const li = document.createElement('li');
+    const lists = document.createElement('ul');
+    const list = document.createElement('li');
 
     const listDiv = document.createElement('div');
     listDiv.className = 'list d-flex parent-flex b-border';
@@ -40,7 +40,7 @@ const display = (array) => {
     taskCompleteSpan.className = 'done hidden child-flex-small success';
     taskCompleteSpan.innerHTML = '<i class="fas fa-check"></i>';
 
-    optionsSpan.addEventListener('click', (e) => visualChange(e, li, optionsSpan, taskCompleteSpan, trashSpan, array));
+    optionsSpan.addEventListener('click', (e) => visualChange(e, list, optionsSpan, taskCompleteSpan, trashSpan, array));
 
     descriptionSpan.addEventListener('keyup', () => editItem(array, item, descriptionSpan));
 
@@ -48,7 +48,7 @@ const display = (array) => {
 
     check.addEventListener('change', (e) => {
       stateChange(e, item, array);
-      visualChange(e, li, optionsSpan, taskCompleteSpan, trashSpan, array);
+      visualChange(e, list, optionsSpan, taskCompleteSpan, trashSpan, array);
     });
 
     if (item.completed) {
@@ -61,9 +61,9 @@ const display = (array) => {
 
     listDiv.append(descriptionDiv, iconsDiv);
 
-    li.appendChild(listDiv);
-    ul.append(li);
-    root.append(ul);
+    list.appendChild(listDiv);
+    lists.append(list);
+    root.append(lists);
   });
 };
 
