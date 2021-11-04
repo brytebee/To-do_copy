@@ -15,7 +15,7 @@ const add = () => {
   if (document.querySelector('.addList').value !== '') {
     let list = getFromStorage();
     const newItem = new List(`${document.querySelector('.addList').value}`, list);
-    list.push(newItem);
+    list.concat(newItem);
     saveInStorage(list);
     list = getFromStorage();
     list = indexUpdate(list);
